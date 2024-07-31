@@ -9,8 +9,9 @@ function passwordGenerator(
 ) {
   // символы для генерации пароля
   const letters = "abcdefghijklmnopqrstuvwxyz";
-  const number = "0123456789";
   const special = "!@#$%^&*()_-+=<>?/[]{}|~";
+  const number = "0123456789";
+
 
   // склеиваем все выбранные наборы символов
   let set = "";
