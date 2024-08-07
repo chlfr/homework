@@ -53,3 +53,34 @@ const amountByMonth = purchases.reduce((acc, purchase) => {
 console.log("Общая сумма всех покупок:", amountByPurchases); // вся сумма покупок
 console.log("Сумма покупок по каждой категории:", amountByCategory); // список сумм по каждой категории
 console.log("Платежи по месяцам:", amountByMonth); // платежи по месяцам
+
+/* правильный вариант:
+
+const makePurchaseStat = (purchases) => {
+  return purchases.reduce(
+     метод reduce - используется для вычисления единого значения на основе всего массива
+    (ob, purchase) => {
+      ob.all += purchase.amount; // вычисляем обущую сумму покупок
+
+      if (!ob.list[purchase.category]) {
+        ob.list[purchase.category] = 0;
+      }
+      ob.list[purchase.category] += purchase.amount; // вычисляем сумму покупок по категориям
+
+      if (!ob.months[purchase.date]) {
+        ob.months[purchase.date] = 0;
+      }
+      ob.months[purchase.date] += purchase.amount; // вычисляем платежи по месяцам
+
+      return ob;
+    },
+    {
+      all: 0, // вся сумма покупок
+      list: {}, // список сумм по каждой категории
+      months: {}, // платежи по месяцам
+    }
+  ); 
+  
+  const result = makePurchaseStat(purchases);
+  console.log(result);
+  */
