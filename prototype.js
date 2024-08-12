@@ -63,8 +63,8 @@ Event.prototype.findParticipantByEmail = function (email) {
 };
 
 // тестируем методы
-const event1 = new Event("Вебинар по Front-end Разработке");
-const event2 = new Event("ASMR мастер-класс по созданию сайта с нуля");
+const event1 = new Event("Вебинар по Front-end Разработке", "2024-08-25");
+const event2 = new Event("ASMR мастер-класс по созданию сайта с нуля", "2024-09-09");
 
 const participant1 = new Participant("Дана", "dana19@gmail.com");
 const participant2 = new Participant("Наталья", "nata@icloud.com");
