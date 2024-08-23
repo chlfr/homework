@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site</title>
+</head>
+<body>
+    
+
+    <main>
+        <h1>DOM элементы в JavaScript</h1>
+        <div id="content">
+<p>
+Каждому тегу страницы в JavaScript соответствует
+некоторый объект со своими свойствами. В
+этом объекте хранится текст тега, значения
+его атрибутов, а также другие полезные вещи.
+В JavaScript такие объекты называют <dfn>DOM
+элементами</dfn>.
+</p>
+<p>
+Пусть в нашем HTML коде есть следующий тег:
+</p>
+<div class="block">
+<code class="highlight" data-module="highlight" data-lang="html">&lt;div id="elem"&gt;text&lt;/div&gt;</code>
+</div>
+<p>
+Пусть в переменной <code class="code inline">elem</code> лежит ссылка
+на этот тег. В этом случае переменная <code class="code inline">elem</code>
+будет объектом со свойствами <code class="code inline">id</code> и
+<code class="code inline">textContent</code>. Свойство <code class="code inline">id</code> будет
+содержать значение атрибута <code class="code inline">id</code> нашего
+тега, а свойство <code class="code inline">textContent</code> - его текст.
+</p>
+<p>
+В следующем уроке мы с вами научимся получать
+в JavaScript ссылки на теги страницы.
+</p>
+</div>
+<script src="/homework/hw for less-8/html-parser.js"></script>
+
+</body>
+</html>
