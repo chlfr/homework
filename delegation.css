@@ -1,0 +1,34 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#taskInput {
+    width: 19em;
+    margin-left: 1em;
+}
+#addTaskButton {
+    margin-left: 1em;
+    background-color: lightblue;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.data-button {
+    cursor: pointer;
+    background-color: rgb(58, 95, 119);
+    color: azure;
+    font-weight: bolder;
+    margin-left: 4em;
+}
+
+.data-list {
+    margin-left: 1em;
+    font-size: larger;
+}
+
+.data-completed {
+    margin-left: 0;
+    margin-right: 0.5em;
+}
